@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = null;
+}
+
+<script>
+    function preferedBrowser() {
+        prefer = document.forms[0].browsers.value;
+        alert("You prefer browsing internet with " + prefer);
+    }
+</script>
+
+<from>
+    Choose which browser you prefer:
+    <select id="browsers" onchange="preferedBrowser()">
+        <option value="Chrome">Chrome</option>
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Firefox">Firefox</option>
+    </select>
+</from>
